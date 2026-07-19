@@ -2,59 +2,60 @@ LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
 TOOLS := \
-	ls \
-	mount \
 	cat \
-	ps \
-	kill \
-	ln \
-	insmod \
-	rmmod \
-	lsmod \
-	ifconfig \
-	setconsole \
-	rm \
-	mkdir \
-	rmdir \
-	getevent \
-	sendevent \
-	date \
-	wipe \
-	sync \
-	umount \
-	start \
-	stop \
-	notify \
-	cmp \
-	dmesg \
-	route \
-	hd \
-	dd \
-	df \
-	getprop \
-	setprop \
-	watchprops \
-	log \
-	sleep \
-	renice \
-	printenv \
-	smd \
 	chmod \
 	chown \
-	newfs_msdos \
-	netstat \
-	ioctl \
-	mv \
-	schedtop \
-	top \
-	iftop \
+	cmp \
+	date \
+	dd \
+	df \
+	dmesg \
+	getevent \
+	getprop \
+	hd \
+	help \
 	id \
+	ifconfig \
+	iftop \
+	insmod \
+	ioctl \
+	ionice \
+	kill \
+	ln \
+	log \
+	ls \
+	lsmod \
+	lsof \
+	mkdir \
+	mount \
+	mv \
+	nandread \
+	netstat \
+	newfs_msdos \
+	notify \
+	printenv \
+	ps \
+	renice \
+	rm \
+	rmdir \
+	rmmod \
+	route \
+	schedtop \
+	sendevent \
+	setconsole \
+	setprop \
+	sleep \
+	smd \
+	start \
+	stop \
+	sync \
+	top \
+	touch \
+	umount \
 	uptime \
 	vmstat \
-	nandread \
-	ionice \
-	touch \
-	lsof
+	watchprops \
+	wipe
 
 ifneq (,$(filter userdebug eng,$(TARGET_BUILD_VARIANT)))
 TOOLS += r
